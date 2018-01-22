@@ -34,10 +34,13 @@ export const Header = () => {
     return (
         <AppBar position="static">
             <Toolbar>
-                <img src={logo} alt="sensenet" aria-label="sensenet" style={styles.logo} />
                 <Button style={styles.button}>
-                    <RadiumLink to="/6915310" style={styles.button}>My stats</RadiumLink>
+                    <RadiumLink to="/company">
+                        <img src={logo} alt="sensenet" aria-label="sensenet" style={styles.logo} /></RadiumLink>
                 </Button>
+                {/* <Button style={styles.button}>
+                    <RadiumLink to="/6915310" style={styles.button}>My stats</RadiumLink>
+                </Button> */}
                 <Button style={styles.button}>
                     <RadiumLink to="/company" style={styles.button}>Company stats</RadiumLink>
                 </Button>
