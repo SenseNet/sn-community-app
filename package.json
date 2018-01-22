@@ -17,9 +17,9 @@
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
-    "stackoverflow": "node scripts/stackoverflow.js",
-    "issues": "node scripts/issues.js",
-    "pullrequests": "node scripts/pullrequests.js"
+    "stackoverflow": "node customscripts/stackoverflow.js",
+    "issues": "node customscripts/issues.js",
+    "pullrequests": "node customscripts/pullrequests.js"
   },
   "devDependencies": {
     "@types/jest": "^21.1.8",
