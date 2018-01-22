@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  color: #444;
+  font-family: 'Roboto';
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.5vw
+}
+
+.fa-gold-medal:before {
+  content: "\1F3C5";
+}
+
+.fa-silver-medal:before {
+  content: "\1F948";
+}
+
+.fa-bronze-medal:before {
+  content: "\1F949";
+}
+
+.fa-sensenet:before {
+  content: "\1F949";
+}
+
+.fa-party:before {
+  content: "\1f389";
+}
+
+.fa-beer:before {
+  content: "\1f37b";
+}
+
+pre {
+  max-width: 100%;
+  overflow: auto
+}

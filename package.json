@@ -1,0 +1,44 @@
+{
+  "name": "sn-community-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "money": "^0.2.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-fontawesome": "^1.6.1",
+    "react-scripts-ts": "2.8.0",
+    "sn-client-auth-google": "^1.0.0",
+    "start": "^5.1.0",
+    "typeface-roboto": "0.0.45"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "stackoverflow": "node scripts/stackoverflow.js",
+    "issues": "node scripts/issues.js",
+    "pullrequests": "node scripts/pullrequests.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "@types/node": "^8.0.53",
+    "@types/react": "^16.0.25",
+    "@types/react-dom": "^16.0.3",
+    "fs": "0.0.1-security",
+    "json-loader": "^0.5.7",
+    "markdown": "^0.5.0",
+    "material-ui": "^1.0.0-beta.22",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "moment": "^2.19.2",
+    "normalizr": "^3.2.4",
+    "radium": "^0.19.6",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "request": "^2.83.0",
+    "semver": "^5.4.1",
+    "sn-client-js": "^3.0.0",
+    "sn-redux": "^3.4.0"
+  }
+}
