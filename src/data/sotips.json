@@ -1,19 +1,19 @@
 [
     {
         "title": "Subscribe to tags",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan tristique malesuada. Pellentesque congue accumsan aliquam. Phasellus pretium, eros eget condimentum feugiat, orci nibh placerat lorem, at varius elit tellus eu elit. Praesent vitae augue nibh. Suspendisse ultrices purus sed consequat pulvinar. Morbi at ullamcorper tellus, et hendrerit dui. Morbi quis lacus ultricies felis fermentum dignissim nec vel odio. Phasellus egestas leo sed felis mollis pulvinar. Maecenas neque felis, mollis eu mauris ac, efficitur tempus nulla. Donec varius massa non consequat feugiat. Pellentesque mauris lectus, condimentum sit amet volutpat non, rutrum sit amet enim. Sed eu ipsum gravida, elementum augue vitae, hendrerit justo. Maecenas venenatis sem nec augue luctus imperdiet. Donec porta, sem quis porta volutpat, ipsum augue dictum lacus, at vulputate nibh ipsum sit amet magna. Aliquam sed augue at diam volutpat venenatis."
+        "description": "In order to know that a question relevant to your expertise has been posted, you need to add Interesting tags. To do so, go to your profile (by clicking your username on top) and then  click on the prefs tab present just before the accounts tab. There you can add your interesting and ignored tags; for example the interesting tags are those you are good at like it can be php, mysql, java, etc. Add as many as you think. Similarly, you also need to add Ignored tags; doing this will remove all questions from SO homepage that are not as per your expertise and this will also increase your chances of answering a question before anyone else does."
     },
     {
         "title": "Ask first on stackoverflow",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan tristique malesuada. Pellentesque congue accumsan aliquam. Phasellus pretium, eros eget condimentum feugiat, orci nibh placerat lorem, at varius elit tellus eu elit. Praesent vitae augue nibh. Suspendisse ultrices purus sed consequat pulvinar. Morbi at ullamcorper tellus, et hendrerit dui. Morbi quis lacus ultricies felis fermentum dignissim nec vel odio. Phasellus egestas leo sed felis mollis pulvinar. Maecenas neque felis, mollis eu mauris ac, efficitur tempus nulla. Donec varius massa non consequat feugiat. Pellentesque mauris lectus, condimentum sit amet volutpat non, rutrum sit amet enim. Sed eu ipsum gravida, elementum augue vitae, hendrerit justo. Maecenas venenatis sem nec augue luctus imperdiet. Donec porta, sem quis porta volutpat, ipsum augue dictum lacus, at vulputate nibh ipsum sit amet magna. Aliquam sed augue at diam volutpat venenatis."
+        "description": "If you have a good question - sensenet or non-sensenet related - ask on stackoverflow first."
     },
     {
         "title": "Ask good questions",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan tristique malesuada. Pellentesque congue accumsan aliquam. Phasellus pretium, eros eget condimentum feugiat, orci nibh placerat lorem, at varius elit tellus eu elit. Praesent vitae augue nibh. Suspendisse ultrices purus sed consequat pulvinar. Morbi at ullamcorper tellus, et hendrerit dui. Morbi quis lacus ultricies felis fermentum dignissim nec vel odio. Phasellus egestas leo sed felis mollis pulvinar. Maecenas neque felis, mollis eu mauris ac, efficitur tempus nulla. Donec varius massa non consequat feugiat. Pellentesque mauris lectus, condimentum sit amet volutpat non, rutrum sit amet enim. Sed eu ipsum gravida, elementum augue vitae, hendrerit justo. Maecenas venenatis sem nec augue luctus imperdiet. Donec porta, sem quis porta volutpat, ipsum augue dictum lacus, at vulputate nibh ipsum sit amet magna. Aliquam sed augue at diam volutpat venenatis."
+        "description": "[How do I ask a good question?](https://stackoverflow.com/help/how-to-ask)"
     },
     {
         "title": "Post high quality answers",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan tristique malesuada. Pellentesque congue accumsan aliquam. Phasellus pretium, eros eget condimentum feugiat, orci nibh placerat lorem, at varius elit tellus eu elit. Praesent vitae augue nibh. Suspendisse ultrices purus sed consequat pulvinar. Morbi at ullamcorper tellus, et hendrerit dui. Morbi quis lacus ultricies felis fermentum dignissim nec vel odio. Phasellus egestas leo sed felis mollis pulvinar. Maecenas neque felis, mollis eu mauris ac, efficitur tempus nulla. Donec varius massa non consequat feugiat. Pellentesque mauris lectus, condimentum sit amet volutpat non, rutrum sit amet enim. Sed eu ipsum gravida, elementum augue vitae, hendrerit justo. Maecenas venenatis sem nec augue luctus imperdiet. Donec porta, sem quis porta volutpat, ipsum augue dictum lacus, at vulputate nibh ipsum sit amet magna. Aliquam sed augue at diam volutpat venenatis."
+        "description": ""
     },
     {
         "title": "Try to be the first who answers",
@@ -21,7 +21,7 @@
     },
     {
         "title": "Use Upvotes and Comments",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan tristique malesuada. Pellentesque congue accumsan aliquam. Phasellus pretium, eros eget condimentum feugiat, orci nibh placerat lorem, at varius elit tellus eu elit. Praesent vitae augue nibh. Suspendisse ultrices purus sed consequat pulvinar. Morbi at ullamcorper tellus, et hendrerit dui. Morbi quis lacus ultricies felis fermentum dignissim nec vel odio. Phasellus egestas leo sed felis mollis pulvinar. Maecenas neque felis, mollis eu mauris ac, efficitur tempus nulla. Donec varius massa non consequat feugiat. Pellentesque mauris lectus, condimentum sit amet volutpat non, rutrum sit amet enim. Sed eu ipsum gravida, elementum augue vitae, hendrerit justo. Maecenas venenatis sem nec augue luctus imperdiet. Donec porta, sem quis porta volutpat, ipsum augue dictum lacus, at vulputate nibh ipsum sit amet magna. Aliquam sed augue at diam volutpat venenatis."
+        "description": ""
     },
     {
         "title": "Define your specality and go Niche",
@@ -37,7 +37,7 @@
     },
     {
         "title": "Provide a good and simple code example",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan tristique malesuada. Pellentesque congue accumsan aliquam. Phasellus pretium, eros eget condimentum feugiat, orci nibh placerat lorem, at varius elit tellus eu elit. Praesent vitae augue nibh. Suspendisse ultrices purus sed consequat pulvinar. Morbi at ullamcorper tellus, et hendrerit dui. Morbi quis lacus ultricies felis fermentum dignissim nec vel odio. Phasellus egestas leo sed felis mollis pulvinar. Maecenas neque felis, mollis eu mauris ac, efficitur tempus nulla. Donec varius massa non consequat feugiat. Pellentesque mauris lectus, condimentum sit amet volutpat non, rutrum sit amet enim. Sed eu ipsum gravida, elementum augue vitae, hendrerit justo. Maecenas venenatis sem nec augue luctus imperdiet. Donec porta, sem quis porta volutpat, ipsum augue dictum lacus, at vulputate nibh ipsum sit amet magna. Aliquam sed augue at diam volutpat venenatis."        
+        "description": ""        
     },
     {
         "title": "Be the *biggest*",
