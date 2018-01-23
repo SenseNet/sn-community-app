@@ -12,7 +12,7 @@ const styles = {
     },
     title: {
         textAlign: 'left',
-        color: '#42A5F5',
+        color: '#777',
         fontWeight: 'normal',
         marginTop: 0,
         marginBottom: 5
@@ -26,10 +26,10 @@ const styles = {
     },
     tag: {
         fontSize: 13,
-        background: '#E3F2FD',
+        background: '#E0F2F1',
         borderRadius: 3,
         marginRight: 5,
-        color: '#64B5F6',
+        color: '#26A69A',
         padding: '2px 5px'
     },
     date: {
@@ -53,6 +53,13 @@ const styles = {
     account: {
         textAlign: 'left',
         fontSize: 13
+    },
+    t: {
+        color: '#13a5ad',
+        fontSize: 55,
+        marginBottom: 20,
+        fontFamily: 'Gotham',
+        textTransform: 'uppercase'
     }
 }
 
@@ -65,7 +72,7 @@ class SNQuestions extends React.Component<SNQuestionsProps, {}> {
         const { questions } = this.props
         return (
             <div style={styles.list}>
-                <h2>Unanswered sn questions</h2>
+                <h2 style={styles.t}>Unanswered sn questions</h2>
                 <List>
                     {questions.map((question, index) => {
                         const date = new Date(question.creation_date * 1000);

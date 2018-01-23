@@ -28,6 +28,12 @@ const styles = theme => ({
         width: '100%',
         maxWidth: 800,
         margin: '25px auto 0'
+    },
+    number: {
+        color: '#13a5ad',
+        fontSize: 45,
+        fontFamily: 'Gotham',
+        textTransform: 'uppercase'
     }
 });
 
@@ -42,7 +48,7 @@ const Summary = ({ allReputation, classes, allPrs, allReputationPerYear }) => {
                         {allReputation}
                     </Typography>
                     <Typography type="body1" className={classes.title}>
-                        reputation is earned in this quarter
+                        <strong>reputation</strong> is earned in this quarter
                     </Typography>
                 </CardContent>
             </Card>
@@ -52,7 +58,7 @@ const Summary = ({ allReputation, classes, allPrs, allReputationPerYear }) => {
                         {allPrs}
                     </Typography>
                     <Typography type="body1" className={classes.title}>
-                        pull requests was made
+                        <strong>pull requests</strong> was made
                     </Typography>
                 </CardContent>
             </Card>
@@ -62,7 +68,7 @@ const Summary = ({ allReputation, classes, allPrs, allReputationPerYear }) => {
                         {allReputationPerYear}
                     </Typography>
                     <Typography type="body1" className={classes.title}>
-                        reputation is earned this year
+                        reputation is earned <strong>this year</strong>
                     </Typography>
                 </CardContent>
             </Card>

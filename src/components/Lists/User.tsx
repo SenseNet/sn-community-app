@@ -60,29 +60,44 @@ const styles = {
     },
     thumbsup: {
         fontSize: 20
+    },
+    green: {
+        background: '#E0F2F1',
+        borderTop: 'solid 2px #fff'
+    },
+    grey: {
+        background: '#ECEFF1',
+        borderTop: 'solid 2px #fff'
+    },
+    red: {
+        background: '#FFEBEE',
+        borderTop: 'solid 2px #fff'
     }
 }
 
 export const User = ({ user, columns }) => {
-    let icon
+    let icon, style
     if (user.danger) {
         icon = (
             <IconButton aria-label="Warning">
                 <WarningIcon style={styles.warn} />
             </IconButton>)
+        style = styles.red
     } else if (user.completed) {
         icon = (
             <IconButton aria-label="Completed">
                 <DoneIcon style={styles.done} />
             </IconButton>)
+        style = styles.green
     } else {
         icon = (
             <IconButton>
                 <FontAwesome name="thumbs-up" style={styles.thumbsup} />
             </IconButton>)
+        style = styles.grey
     }
     return (
-        <ListItem key={user.id}>
+        <ListItem key={user.id} style={style}>
             <ListItemIcon>
                 {icon}
             </ListItemIcon>

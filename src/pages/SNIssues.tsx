@@ -8,6 +8,13 @@ const styles = {
         width: '100%',
         maxWidth: 800,
         margin: '0 auto'
+    },
+    title: {
+        color: '#13a5ad',
+        fontSize: 55,
+        marginBottom: 20,
+        fontFamily: 'Gotham',
+        textTransform: 'uppercase'
     }
 }
 
@@ -25,7 +32,9 @@ class Issues extends React.Component<IssuesProps, {}> {
         return (
 
             <div style={styles.list}>
-                {match.params.label !== undefined && match.params.label.length > 0 ? <h2>Open sn issues with label '{match.params.label}'</h2> : <h2>Open sn issues</h2>}
+                {match.params.label !== undefined && match.params.label.length > 0 ?
+                    <h2 style={styles.title}>Open sn issues with label '{match.params.label}'</h2> :
+                    <h2 style={styles.title}>Open sn issues</h2>}
                 {issues.map((issue, index) => {
                     return <Issue key={issue.id} issue={issue} />
                 })}

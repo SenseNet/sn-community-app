@@ -9,9 +9,12 @@ import Radium from 'radium';
 
 const RadiumLink = Radium(Link);
 
-const logo = require('../sensenet_white.png');
+const logo = require('../data/sensenet-logo.png');
 
 const styles = {
+    header: {
+        background: '#fff'
+    },
     logo: {
         flex: 1,
         color: '#fff',
@@ -25,14 +28,14 @@ const styles = {
         marginRight: 10
     },
     button: {
-        color: '#fff',
+        color: '#777',
         textDecoration: 'none'
     }
 }
 
 export const Header = () => {
     return (
-        <AppBar position="static">
+        <AppBar position="static" style={styles.header}>
             <Toolbar>
                 <Button style={styles.button}>
                     <RadiumLink to="/company">

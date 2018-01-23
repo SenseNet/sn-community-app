@@ -19,15 +19,22 @@ const styles = {
     },
     link: {
         textDecoration: 'none'
+    },
+    title: {
+        color: '#13a5ad',
+        fontSize: 55,
+        marginBottom: 20,
+        fontFamily: 'Gotham',
+        textTransform: 'uppercase'
     }
 }
 
 export const Help = () => {
     return (
         <div style={styles.help}>
-            <h2>Help</h2>
+            <h2 style={styles.title}>Help</h2>
             <List>
-            <ListItem>
+                <ListItem>
                     <Avatar style={styles.avatar}>
                         <SchoolIcon />
                     </Avatar>

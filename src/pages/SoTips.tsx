@@ -28,11 +28,21 @@ const styles = theme => ({
     }
 });
 
+const s = {
+    title: {
+        color: '#13a5ad',
+        fontSize: 55,
+        marginBottom: 20,
+        fontFamily: 'Gotham',
+        textTransform: 'uppercase'
+    }
+}
+
 const SoTips = (props) => {
     const { classes } = props;
     return (
         <div className={classes.root}>
-            <h2>Stackoverflow tips and tricks</h2>
+            <h2 style={s.title}>Stackoverflow tips and tricks</h2>
             {tips.map((tip, index) => {
                 return (<ExpansionPanel key={index}>
                     <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>

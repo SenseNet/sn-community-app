@@ -21,6 +21,13 @@ const styles = theme => ({
         marginTop: 40
     }
 });
+const s = {
+    title: {
+        color: '#13a5ad',
+        fontFamily: 'Gotham',
+        textTransform: 'uppercase'
+    }
+}
 
 interface CompanyDashboardProps {
     users: any[],
@@ -62,11 +69,11 @@ class CompanyDashboard extends React.Component<CompanyDashboardProps, {}> {
                 <Summary allReputation={this.allRepChange()} classes={classes} allPrs={prcount} allReputationPerYear={this.allRepChangePerYear()} />
                 <Grid container={true} spacing={40} className={classes.container}>
                     <Grid item={true} xs={12} sm={6}>
-                        <h2>Q{quarter} reputation</h2>
+                        <h2 style={s.title}>Q{quarter} reputation</h2>
                         <ByReputationChange users={toplistByReputationChange} />
                     </Grid>
                     <Grid item={true} xs={12} sm={6}>
-                        <h2>Q{quarter} pull requests</h2>
+                        <h2 style={s.title}>Q{quarter} pull requests</h2>
                         <ByPullRequests users={toplistByPullRequests} />
                     </Grid>
                     {/* <Grid item={true} xs={12} sm={4}>
