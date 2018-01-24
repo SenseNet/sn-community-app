@@ -1,7 +1,7 @@
 const fs = require('fs')
 const request = require('request')
 const semver = require('semver')
-const token = '3f61d3dee6babfd6f057449b71a760bfdfbcc4e3'
+const token = 'e2eb16d00617762b7ff77aec7507bf689e35afe8'
 
 const repos = [
   'sensenet',
