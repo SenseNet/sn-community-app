@@ -86,7 +86,7 @@
     {
         "username": "schwarzingercs",
         "fullname": "Csaba Schwarzinger",
-        "soId": null,
+        "soId": "6931353",
         "githubId": "11719551",
         "githubUsername": "swacsa"
     },
@@ -145,5 +145,12 @@
         "soId": "5851830",
         "githubId": "3874612",
         "githubUsername": "AngryCMOS"
+    },
+    {
+        "username": "ballaio",
+        "fullname": "Olivér Ballai",
+        "soId": "9262186",
+        "githubId": "35768465",
+        "githubUsername": "Ballaio"
     }
 ]
