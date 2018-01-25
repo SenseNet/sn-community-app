@@ -109,7 +109,7 @@
     ],
     "globals": {
       "ts-jest": {
-        "tsConfigFile": "d:\\Development\\sn-community-app\\tsconfig.test.json"
+        "tsConfigFile": "tsconfig.test.json"
       }
     }
   },
