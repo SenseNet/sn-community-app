@@ -46,4 +46,8 @@ export module SNCommunityAppActions {
         type: 'GET_PULLREQUESTS',
         pullrequests
     })
+    export const getStatsByGroups = (users: any[]) => ({
+        type: 'GET_STATS_BY_GROUPS',
+        ids: Helpers.getGroups(users)
+    })
 }

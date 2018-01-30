@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import { Helpers } from './Helpers';
 
 const goals = {
     stackoverflow: 100,
@@ -94,9 +95,34 @@ export module SNCommunityAppReducers {
         pullrequest
     })
 
+    export const groupIds = (state = [], action: any) => {
+        switch (action.type) {
+            case 'GET_STATS_BY_GROUPS':
+                return action.ids;
+            default:
+                return state;
+        }
+    }
+
+    export const groupEtities = (state = [], action: any) => {
+        switch (action.type) {
+            case 'GET_SO_STATS_SUCCESS':
+                let groupsWithReputation = getReputationByGroup(action.response)
+                return groupsWithReputation;
+            default:
+                return state;
+        }
+    }
+
+    export const groups = combineReducers({
+        ids: groupIds,
+        entities: groupEtities
+    })
+
     export const SNCommunityApp = combineReducers({
         stackoverflow,
-        github
+        github,
+        groups
     })
 
     export const getUserById = (state, id) => {
@@ -117,6 +143,16 @@ export module SNCommunityAppReducers {
                 }
             })
         }
+        return us
+    }
+
+    export const getGithubUserByName = (state, name) => {
+        let us = null;
+        state.map(pu => {
+            if (pu.username === name) {
+                us = pu
+            }
+        })
         return us
     }
 
@@ -171,8 +207,11 @@ export module SNCommunityAppReducers {
         return resortedUsers
     }
 
-    export const getUsersOrderedBySNAnswers = (state) => 
+    export const getUsersOrderedBySNAnswers = (state) =>
         state.topusers;
+
+    export const getGroups = (state) => 
+        state.groups;
 
     export const getQuestionsUnanswered = (state) => {
         return state.questions
@@ -212,6 +251,62 @@ export module SNCommunityAppReducers {
 
     export const getPrByUser = (g, user) => {
         return g.pullrequest
+    }
+
+    export const getToplistByGroups = (state) => {
+        const groupNames = state.groups.ids;
+        let m = [];
+        groupNames.map(name => {
+            let pr;
+            pr = getPrByGroup(name, state.github.pullrequest.pullrequests)
+            m[name] = { name: name, pr: pr, reputation: 0 }
+        })
+
+        return m
+    }
+
+    const getPrByGroup = (group, prs) => {
+        let pr = 0;
+        const groupUsers = getUsersInGroup(group)
+        for (let i = 0; i < groupUsers.length; i++) {
+            let user = getGithubUserByName(prs, groupUsers[i].githubUsername)
+            pr += user.count
+        }
+        return pr;
+    }
+
+    export const getReputationByGroup = (state) => {
+        const g = Helpers.getGroups(usersek);
+        let go = {};
+        g.map(x => {
+            go[x] = { name: x, reputation: 0 }
+        });
+        state.result.map(id => {
+            const user = getUserById(state.entities, id)
+            let currentGroup = getGroupByUser(id)
+            go[currentGroup].reputation += user.reputation_change_quarter;
+        })
+        return go;
+    }
+
+    const getGroupByUser = (soId) => {
+        let groupname;
+        usersek.map(user => {
+            if (Number(user.soId) === Number(soId)) {
+                groupname = user.team;
+            }
+        });
+        return groupname;
+    }
+
+    const getUsersInGroup = (group) => {
+        let g = []
+        usersek.map(user => {
+            if (user.team === group) {
+                g.push(user)
+            }
+        });
+        return g;
     }
 
     const reputationComparator = (a: any, b: any) => {

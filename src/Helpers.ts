@@ -78,4 +78,14 @@ export module Helpers {
         })
         return username;
     }
+
+    export const getGroups = (users) => {
+        let userIds = []
+        users.map(user => {
+            if (userIds.indexOf(user.team) === -1 && user.team) {
+                userIds.push(user.team)
+            }
+        });
+        return userIds;
+    }
 }

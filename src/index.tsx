@@ -20,6 +20,7 @@ import './index.css'
 
 const issues = require('./data/issues.json');
 const pullrequests = require('./data/pullrequests.json');
+const users = require('./data/users.json');
 
 // const sensenet = Reducers.sensenet
 const SNCommunityApp = SNCommunityAppReducers.SNCommunityApp
@@ -51,6 +52,7 @@ store.dispatch(SNCommunityAppActions.getSOSNTagAnswerers())
 store.dispatch(SNCommunityAppActions.getSOQuestions())
 store.dispatch(SNCommunityAppActions.getIssues(issues))
 store.dispatch(SNCommunityAppActions.getPullRequests(pullrequests))
+store.dispatch(SNCommunityAppActions.getStatsByGroups(users))
 
 ReactDOM.render(
   <Provider store={store}>
