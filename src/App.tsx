@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from 'react'
 import {
   BrowserRouter as Router,
   Route,
@@ -12,21 +12,21 @@ import UserDashboard from './pages/UserDashboard'
 import CompanyDashboard from './pages/CompanyDashboard'
 import SNQuestions from './pages/SNQuestions'
 import SoTips from './pages/SoTips'
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
-import { lightBlue, lightGreen, red } from 'material-ui/colors';
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles'
+import { lightBlue, lightGreen, red } from 'material-ui/colors'
 
-import './App.css';
+import './App.css'
 
 const theme = createMuiTheme({
   palette: {
-    primary: lightBlue, 
+    primary: lightBlue,
     secondary: lightGreen,
     error: red,
   },
   overrides: {
-    
+
   }
-});
+})
 
 class App extends React.Component {
   render() {
@@ -36,7 +36,7 @@ class App extends React.Component {
           <Router>
             <div>
               <Header />
-              <Route exact={true}  path="/" component={CompanyDashboard} />
+              <Route exact={true} path="/" component={CompanyDashboard} />
               <Route path="/login" component={Login} />
               <Route path="/:id" component={UserDashboard} />
               <Route path="/company" component={CompanyDashboard} />
@@ -50,8 +50,8 @@ class App extends React.Component {
           </Router>
         </div>
       </MuiThemeProvider>
-    );
+    )
   }
 }
 
-export default App;
+export default App
