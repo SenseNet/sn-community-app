@@ -38,7 +38,7 @@ export const Help = () => {
                     <Avatar style={styles.avatar}>
                         <SchoolIcon />
                     </Avatar>
-                    <a href="https://github.com/Sensenet/sn-resources/training" style={styles.link} target="_blank"><ListItemText primary="Training materials" /></a>
+                    <a href="https://github.com/SenseNet/sn-resources/tree/master/training/sn-certified-frontend-developer" style={styles.link} target="_blank"><ListItemText primary="Training materials" /></a>
                 </ListItem>
                 <ListItem>
                     <Avatar style={styles.avatar}>
