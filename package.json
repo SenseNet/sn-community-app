@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "autoprefixer": "7.2.5",
+    "autoprefixer": "7.2.6",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
     "chalk": "2.3.0",
     "css-loader": "0.28.9",
