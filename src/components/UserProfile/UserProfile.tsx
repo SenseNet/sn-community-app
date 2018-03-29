@@ -49,7 +49,9 @@ export const UserProfile = ({ user, githubUser, position, top, remaining, remain
   return (
     <div>
       <h2>
-        <a href={user.link} style={styles.name}>{Helpers.decodeHtml(user.display_name)}</a>
+        <a href={user.link} style={styles.name} title={githubUser.name}>{Helpers.decodeHtml(user.display_name)}</a>
+        <br />
+        {githubUser.username}
       </h2>
       <div style={styles.imgContainer as any}>
         <a href={user.link} style={styles.name}>
