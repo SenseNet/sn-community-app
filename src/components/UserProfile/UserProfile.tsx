@@ -13,6 +13,9 @@ const styles = {
     color: '#444',
     textDecoration: 'none'
   },
+  githubusername: {
+    fontSize: 12
+  },
   profileImg: {
     maxWidth: 150,
     margin: '0 auto 10px',
@@ -50,9 +53,8 @@ export const UserProfile = ({ user, githubUser, position, top, remaining, remain
     <div>
       <h2>
         <a href={user.link} style={styles.name} title={githubUser.name}>{Helpers.decodeHtml(user.display_name)}</a>
-        <br />
-        {githubUser.username}
       </h2>
+      <span style={styles.githubusername}>{githubUser.username}</span>
       <div style={styles.imgContainer as any}>
         <a href={user.link} style={styles.name}>
           <img src={user.profile_image} style={styles.profileImg} />
