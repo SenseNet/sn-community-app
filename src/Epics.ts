@@ -1,13 +1,11 @@
 import { combineEpics } from 'redux-observable'
 import { Observable } from 'rxjs/Observable'
-import { Epics } from 'sn-redux'
-import { Repository } from 'sn-client-js'
 import { ajax } from 'rxjs/observable/dom/ajax'
 import { SNCommunityAppActions } from './Actions'
 
 export namespace SNCommunityAppEpics {
 
-  export const getSOStatsEpic = (action$, store, dependencies?: { repository: Repository.BaseRepository }) => {
+  export const getSOStatsEpic = (action$, store) => {
     return action$.ofType('GET_SO_STATS')
       .mergeMap(action => {
         const path = `https://api.stackexchange.com/2.2/users/${action.ids}?order=desc&sort=reputation&site=stackoverflow`
@@ -17,7 +15,7 @@ export namespace SNCommunityAppEpics {
       })
   }
 
-  export const getSOQuestionsEpic = (action$, store, dependencies?: { repository: Repository.BaseRepository }) => {
+  export const getSOQuestionsEpic = (action$, store) => {
     return action$.ofType('GET_SO_QUESTIONS')
       .mergeMap(action => {
         const path = `https://api.stackexchange.com/2.2/questions/no-answers?order=desc&sort=activity&tagged=sensenet&site=stackoverflow`
@@ -27,7 +25,7 @@ export namespace SNCommunityAppEpics {
       })
   }
 
-  export const getSOSNTagAnswerersEpic = (action$, store, dependencies?: { repository: Repository.BaseRepository }) => {
+  export const getSOSNTagAnswerersEpic = (action$, store) => {
     return action$.ofType('GET_SO_SNANSWERERS')
       .mergeMap(action => {
         const path = `https://api.stackexchange.com/2.2/tags/sensenet/top-answerers/all_time?site=stackoverflow`
