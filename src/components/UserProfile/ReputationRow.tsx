@@ -6,7 +6,7 @@ const styles = {
     marginTop: 20,
     textTransform: 'uppercase',
     fontSize: '18px'
-  },
+  } as React.CSSProperties,
   reputationNum: {
     fontWeight: 'bold',
     fontSize: '20px',

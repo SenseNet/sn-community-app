@@ -1,9 +1,10 @@
 import * as React from 'react'
-import ExpansionPanel, {
+import {
   ExpansionPanelDetails,
   ExpansionPanelSummary,
-} from 'material-ui/ExpansionPanel'
-import ExpandMoreIcon from 'material-ui-icons/ExpandMore'
+  ExpansionPanel
+} from '@material-ui/Core'
+import { ExpandMore } from '@material-ui/icons'
 import { Labels } from '../Labels'
 import { markdown } from 'markdown'
 import { Helpers } from '../../Helpers'
@@ -32,7 +33,7 @@ const styles = {
     textAlign: 'left',
     fontSize: 14,
     lineHeight: '20px'
-  },
+  } as React.CSSProperties,
   descInner: {
     background: '#efefef',
     padding: '0 10px',
@@ -49,7 +50,7 @@ const styles = {
 export const Issue = ({ issue }) => {
   return (
     <ExpansionPanel>
-      <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+      <ExpansionPanelSummary expandIcon={<ExpandMore />}>
         <div style={styles.labels}>
           <Labels labels={issue.labels} />
         </div>

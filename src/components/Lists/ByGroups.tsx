@@ -1,5 +1,5 @@
 import * as React from 'react'
-import List from 'material-ui/List'
+import { List } from '@material-ui/Core'
 import { Group } from './Group'
 import { connect } from 'react-redux'
 import { SNCommunityAppReducers } from '../../Reducers'
@@ -11,7 +11,7 @@ const styles = {
     padding: 0,
     maxWidth: 600,
     listStyleType: 'none'
-  }
+  } as React.CSSProperties
 }
 
 class ByGroups extends React.Component<{ prgroups: any, groups: any }, {}> {

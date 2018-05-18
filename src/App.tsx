@@ -12,8 +12,8 @@ import UserDashboard from './pages/UserDashboard'
 import CompanyDashboard from './pages/CompanyDashboard'
 import SNQuestions from './pages/SNQuestions'
 import SoTips from './pages/SoTips'
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles'
-import { lightBlue, lightGreen, red } from 'material-ui/colors'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/Core'
+import { lightBlue, lightGreen, red } from '@material-ui/Core/colors'
 
 import './App.css'
 

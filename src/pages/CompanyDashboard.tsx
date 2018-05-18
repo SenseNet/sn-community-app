@@ -5,11 +5,9 @@ import { ByReputationChange } from '../components/Lists/ByReputationChange'
 import { ByPullRequests } from '../components/Lists/ByPullRequests'
 import ByGroups from '../components/Lists/ByGroups'
 import Summary from '../components/Summary'
-import Grid from 'material-ui/Grid'
-import { withStyles } from 'material-ui/styles'
-// import { AllTime } from '../components/Lists/AllTime'
-import * as moment from 'moment'
-
+import { Grid } from '@material-ui/Core'
+import { withStyles } from '@material-ui/Core'
+import moment from 'moment';
 const styles = theme => ({
   root: {
     flexGrow: 1,
@@ -26,7 +24,7 @@ const s = {
     color: '#13a5ad',
     fontFamily: 'Gotham',
     textTransform: 'uppercase'
-  }
+  } as React.CSSProperties
 }
 
 interface CompanyDashboardProps {

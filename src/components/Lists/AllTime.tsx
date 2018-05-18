@@ -1,5 +1,5 @@
 import * as React from 'react'
-import List from 'material-ui/List'
+import { List } from '@material-ui/Core'
 import { User } from './User'
 import { Helpers } from '../../Helpers'
 
@@ -10,7 +10,7 @@ const styles = {
     padding: 0,
     maxWidth: 600,
     listStyleType: 'none'
-  }
+  } as React.CSSProperties
 }
 
 export const AllTime = ({ users }) => {

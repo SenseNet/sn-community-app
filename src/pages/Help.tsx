@@ -1,11 +1,12 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import List, {
+import {
+  Avatar,
+  List,
   ListItem,
   ListItemText
-} from 'material-ui/List'
-import Avatar from 'material-ui/Avatar'
-import SchoolIcon from 'material-ui-icons/School'
+} from '@material-ui/Core'
+import { School } from '@material-ui/icons'
 import * as FontAwesome from 'react-fontawesome'
 
 const styles = {
@@ -26,7 +27,7 @@ const styles = {
     marginBottom: 20,
     fontFamily: 'Gotham',
     textTransform: 'uppercase'
-  }
+  } as React.CSSProperties
 }
 
 export const Help = () => {
@@ -36,7 +37,7 @@ export const Help = () => {
       <List>
         <ListItem>
           <Avatar style={styles.avatar}>
-            <SchoolIcon />
+            <School />
           </Avatar>
           <a href="https://github.com/SenseNet/sn-resources/tree/master/training/sn-certified-frontend-developer" style={styles.link} target="_blank"><ListItemText primary="Training materials" /></a>
         </ListItem>

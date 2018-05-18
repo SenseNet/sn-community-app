@@ -6,7 +6,7 @@ const styles = {
     margin: 0,
     width: '100%',
     textAlign: 'left',
-  },
+  } as React.CSSProperties,
   label: {
     color: '#fff',
     listStyleType: 'none',

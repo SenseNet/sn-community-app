@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { User } from './User'
 import { Helpers } from '../../Helpers'
-import List from 'material-ui/List'
+import { List } from '@material-ui/Core'
 
 const styles = {
   toplist: {
@@ -10,7 +10,7 @@ const styles = {
     padding: 0,
     maxWidth: 600,
     listStyleType: 'none'
-  }
+  } as React.CSSProperties
 }
 
 export const ByPullRequests = ({ users }) => {

@@ -15,7 +15,7 @@ const styles = {
     marginBottom: 20,
     fontFamily: 'Gotham',
     textTransform: 'uppercase'
-  }
+  } as React.CSSProperties
 }
 
 interface IssuesProps {

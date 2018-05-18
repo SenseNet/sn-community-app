@@ -1,10 +1,9 @@
 import * as React from 'react'
-import AppBar from 'material-ui/AppBar'
-import Toolbar from 'material-ui/Toolbar'
+import { AppBar, Toolbar } from '@material-ui/Core'
 import {
   Link
 } from 'react-router-dom'
-import Button from 'material-ui/Button'
+import { Button } from '@material-ui/Core'
 import Radium from 'radium'
 
 const RadiumLink = Radium(Link)

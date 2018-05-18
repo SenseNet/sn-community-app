@@ -1,11 +1,11 @@
 import * as React from 'react'
-import ExpansionPanel, {
+import {
+  ExpansionPanel,
   ExpansionPanelSummary,
   ExpansionPanelDetails,
-} from 'material-ui/ExpansionPanel'
-import { withStyles } from 'material-ui/styles'
-import Typography from 'material-ui/Typography'
-import ExpandMoreIcon from 'material-ui-icons/ExpandMore'
+  withStyles, Typography
+} from '@material-ui/Core'
+import { ExpandMore } from '@material-ui/icons'
 import { markdown } from 'markdown'
 
 const tips = require('../data/sotips.json')
@@ -35,7 +35,7 @@ const s = {
     marginBottom: 20,
     fontFamily: 'Gotham',
     textTransform: 'uppercase'
-  }
+  } as React.CSSProperties
 }
 
 const SoTips = (props) => {
@@ -45,7 +45,7 @@ const SoTips = (props) => {
       <h2 style={s.title}>Stackoverflow tips and tricks</h2>
       {tips.map((tip, index) => {
         return (<ExpansionPanel key={index}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+          <ExpansionPanelSummary expandIcon={<ExpandMore />}>
             <Typography className={classes.heading}>{tip.title}</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
@@ -57,4 +57,4 @@ const SoTips = (props) => {
   )
 }
 
-export default withStyles(styles)(SoTips)
+export default withStyles(styles as any)(SoTips)

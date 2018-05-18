@@ -1,7 +1,7 @@
 import * as React from 'react'
-import Card, { CardContent } from 'material-ui/Card'
-import { withStyles } from 'material-ui/styles'
-import Typography from 'material-ui/Typography'
+import { Card, CardContent } from '@material-ui/Core'
+import { withStyles } from '@material-ui/Core'
+import { Typography } from '@material-ui/Core'
 
 const styles = theme => ({
   card: {
@@ -44,30 +44,30 @@ const Summary = ({ allReputation, classes, allPrs, allReputationPerYear }) => {
     <div className={classes.container}>
       <Card className={classes.card}>
         <CardContent>
-          <Typography type="headline" className={classes.number}>
+          <Typography itemType="headline" className={classes.number}>
             {allReputation}
           </Typography>
-          <Typography type="body1" className={classes.title}>
+          <Typography itemType="body1" className={classes.title}>
             <strong>reputation</strong> is earned in this quarter
                     </Typography>
         </CardContent>
       </Card>
       <Card className={classes.card}>
         <CardContent>
-          <Typography type="headline" className={classes.number}>
+          <Typography itemType="headline" className={classes.number}>
             {allPrs}
           </Typography>
-          <Typography type="body1" className={classes.title}>
+          <Typography itemType="body1" className={classes.title}>
             <strong>pull requests</strong> was made
                     </Typography>
         </CardContent>
       </Card>
       <Card className={classes.card}>
         <CardContent>
-          <Typography type="headline" className={classes.number}>
+          <Typography itemType="headline" className={classes.number}>
             {allReputationPerYear}
           </Typography>
-          <Typography type="body1" className={classes.title}>
+          <Typography itemType="body1" className={classes.title}>
             reputation is earned <strong>this year</strong>
           </Typography>
         </CardContent>
@@ -76,4 +76,4 @@ const Summary = ({ allReputation, classes, allPrs, allReputationPerYear }) => {
   )
 }
 
-export default withStyles(styles)(Summary)
+export default withStyles(styles as any)(Summary)

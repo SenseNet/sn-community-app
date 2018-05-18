@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux'
+import { combineReducers, Reducer } from 'redux'
 import { Helpers } from './Helpers'
 
 const goals = {
@@ -95,7 +95,7 @@ export module SNCommunityAppReducers {
     pullrequest
   })
 
-  export const groupIds = (state = [], action: any) => {
+  export const groupIds: Reducer = (state = [], action: any) => {
     switch (action.type) {
       case 'GET_STATS_BY_GROUPS':
         return action.ids
@@ -104,7 +104,7 @@ export module SNCommunityAppReducers {
     }
   }
 
-  export const groupEtities = (state = [], action: any) => {
+  export const groupEtities: Reducer = (state = [], action: any) => {
     switch (action.type) {
       case 'GET_SO_STATS_SUCCESS':
         let groupsWithReputation = getReputationByGroup(action.response)

@@ -2,12 +2,9 @@ import * as React from 'react'
 import {
   Link
 } from 'react-router-dom'
-import { ListItem, ListItemText, ListItemIcon } from 'material-ui/List'
+import { ListItem, ListItemText, ListItemIcon, Avatar, IconButton } from '@material-ui/Core'
 import Radium from 'radium'
-import Avatar from 'material-ui/Avatar'
-import WarningIcon from 'material-ui-icons/Warning'
-import DoneIcon from 'material-ui-icons/Done'
-import IconButton from 'material-ui/IconButton'
+import { Warning, Done } from '@material-ui/icons'
 import * as FontAwesome from 'react-fontawesome'
 
 const RadiumLink = Radium(Link)
@@ -80,13 +77,13 @@ export const User = ({ user, columns }) => {
   if (user.danger) {
     icon = (
       <IconButton aria-label="Warning">
-        <WarningIcon style={styles.warn} />
+        <Warning style={styles.warn} />
       </IconButton>)
     style = styles.red
   } else if (user.completed) {
     icon = (
       <IconButton aria-label="Completed">
-        <DoneIcon style={styles.done} />
+        <Done style={styles.done} />
       </IconButton>)
     style = styles.green
   } else {

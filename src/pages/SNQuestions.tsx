@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { SNCommunityAppReducers } from '../Reducers'
-import List, { ListItem } from 'material-ui/List'
-import * as moment from 'moment'
+import { List, ListItem } from '@material-ui/Core'
+import moment from 'moment'
 
 const styles = {
   list: {
@@ -23,7 +23,7 @@ const styles = {
   tags: {
     display: 'block',
     textAlign: 'left'
-  },
+  } as React.CSSProperties,
   tag: {
     fontSize: 13,
     background: '#E0F2F1',
@@ -31,7 +31,7 @@ const styles = {
     marginRight: 5,
     color: '#26A69A',
     padding: '2px 5px'
-  },
+  } as React.CSSProperties,
   date: {
     fontSize: 13,
     verticalAlign: 'top',
@@ -53,14 +53,14 @@ const styles = {
   account: {
     textAlign: 'left',
     fontSize: 13
-  },
+  } as React.CSSProperties,
   t: {
     color: '#13a5ad',
     fontSize: 55,
     marginBottom: 20,
     fontFamily: 'Gotham',
     textTransform: 'uppercase'
-  }
+  } as React.CSSProperties
 }
 
 interface SNQuestionsProps {
