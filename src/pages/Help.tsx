@@ -7,7 +7,7 @@ import {
   ListItemText
 } from '@material-ui/Core'
 import { School } from '@material-ui/icons'
-import * as FontAwesome from 'react-fontawesome'
+import FontAwesome from 'react-fontawesome'
 
 const styles = {
   help: {

@@ -1,9 +1,11 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
+import 'babel-polyfill'
 import {
   HashRouter as Router
 } from 'react-router-dom'
 import { applyMiddleware, combineReducers, createStore } from 'redux'
+import { promiseMiddleware } from '@sensenet/redux-promise-middleware'
 import { createLogger } from 'redux-logger'
 import { Provider } from 'react-redux'
 import { SNCommunityAppReducers } from './Reducers'
@@ -17,19 +19,17 @@ const issues = require('./data/issues.json')
 const pullrequests = require('./data/pullrequests.json')
 const users = require('./data/users.json')
 
-// const sensenet = Reducers.sensenet
 const SNCommunityApp = SNCommunityAppReducers.SNCommunityApp
 const myReducer = combineReducers({
-  // sensenet,
   SNCommunityApp
 })
-// const epicMiddleware = createEpicMiddleware(SNCommunityAppEpics.rootEpic)
 const logger = createLogger()
 const ids = Helpers.getSoIds()
+const pm = promiseMiddleware(null as any);
 let store = createStore(
   myReducer,
   {},
-  applyMiddleware(logger)
+  applyMiddleware(logger, pm)
 )
 store.dispatch(SNCommunityAppActions.getSOStats(ids))
 store.dispatch(SNCommunityAppActions.getSOSNTagAnswerers())

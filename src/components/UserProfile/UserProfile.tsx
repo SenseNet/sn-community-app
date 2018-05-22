@@ -5,7 +5,7 @@ import { ReputationRow } from './ReputationRow'
 import { Remaining } from './Remaining'
 import { RemainingPr } from './RemainingPr'
 import { PrRow } from './PrRow'
-import * as FontAwesome from 'react-fontawesome'
+import FontAwesome from 'react-fontawesome'
 import 'typeface-roboto'
 
 const styles = {

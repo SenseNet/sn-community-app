@@ -5,7 +5,7 @@ import {
 import { ListItem, ListItemText, ListItemIcon, Avatar, IconButton } from '@material-ui/Core'
 import Radium from 'radium'
 import { Warning, Done } from '@material-ui/icons'
-import * as FontAwesome from 'react-fontawesome'
+import FontAwesome from 'react-fontawesome'
 
 const RadiumLink = Radium(Link)
 
