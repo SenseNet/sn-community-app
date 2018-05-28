@@ -3,7 +3,7 @@ import {
   Link
 } from 'react-router-dom'
 import Radium from 'radium'
-import * as FontAwesome from 'react-fontawesome'
+import FontAwesome from 'react-fontawesome'
 
 const RadiumLink = Radium(Link)
 

@@ -1,37 +1,24 @@
 {
   "compilerOptions": {
-    "outDir": "build/dist",
-    "module": "esnext",
-    "target": "es5",
-    "lib": ["es6", "dom"],
-    "sourceMap": true,
-    "allowJs": true,
-    "jsx": "react",
-    "moduleResolution": "node",
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": false,
-    "strictNullChecks": false,
-    "suppressImplicitAnyIndexErrors": false,
-    "noUnusedLocals": true,
-    "strict": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "types": [
-      "jest",
-      "node"
-    ]
+      "strict": true,
+      "noUnusedLocals": true,
+      "target": "es2015",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "declaration": true,
+      "preserveConstEnums": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "outDir": "./dist",
+      "jsx": "react"
   },
   "exclude": [
-    "node_modules",
-    "build",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest",
-    "src/setupTests.ts"
+      "node_modules",
+      "dist"
+  ],
+  "compileOnSave": false,
+  "files": [
+      "src/index.ts"
   ]
 }

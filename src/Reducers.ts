@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux'
+import { combineReducers, Reducer } from 'redux'
 import { Helpers } from './Helpers'
 
 const goals = {
@@ -12,7 +12,7 @@ export module SNCommunityAppReducers {
   export const SOStats = (state = {}, action: any) => {
     switch (action.type) {
       case 'GET_SO_STATS_SUCCESS':
-        return ({ ...state, ...action.response.entities.users })
+        return ({ ...state, ...action.payload.entities.users })
       case 'GET_SO_STATS_FAILURE':
         return state
       default:
@@ -22,7 +22,7 @@ export module SNCommunityAppReducers {
   export const SOSNTagAnswerers = (state = [], action: any) => {
     switch (action.type) {
       case 'GET_SO_SNANSWERERS_SUCCESS':
-        return action.response
+        return action.payload
       case 'GET_SO_STATS_FAILURE':
         return state
       default:
@@ -32,7 +32,7 @@ export module SNCommunityAppReducers {
   export const ids = (state = [], action: any) => {
     switch (action.type) {
       case 'GET_SO_STATS_SUCCESS':
-        return action.response.result
+        return action.payload.result
       case 'GET_SO_STATS_FAILURE':
         return []
       default:
@@ -58,7 +58,7 @@ export module SNCommunityAppReducers {
   export const questions = (state = [], action: any) => {
     switch (action.type) {
       case 'GET_SO_QUESTIONS_SUCCESS':
-        return action.response
+        return action.payload
       default:
         return state
     }
@@ -95,7 +95,7 @@ export module SNCommunityAppReducers {
     pullrequest
   })
 
-  export const groupIds = (state = [], action: any) => {
+  export const groupIds: Reducer = (state = [], action: any) => {
     switch (action.type) {
       case 'GET_STATS_BY_GROUPS':
         return action.ids
@@ -104,10 +104,10 @@ export module SNCommunityAppReducers {
     }
   }
 
-  export const groupEtities = (state = [], action: any) => {
+  export const groupEtities: Reducer = (state = [], action: any) => {
     switch (action.type) {
       case 'GET_SO_STATS_SUCCESS':
-        let groupsWithReputation = getReputationByGroup(action.response)
+        let groupsWithReputation = getReputationByGroup(action.payload)
         return groupsWithReputation
       default:
         return state

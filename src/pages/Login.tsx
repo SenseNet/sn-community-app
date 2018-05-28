@@ -1,8 +1,5 @@
 import * as React from 'react'
-import Drawer from 'material-ui/Drawer'
-import Divider from 'material-ui/Divider'
-import List from 'material-ui/List'
-import { withStyles } from 'material-ui/styles'
+import { Drawer, Divider, List, withStyles } from '@material-ui/Core'
 
 const styles = theme => ({
   drawerHeader: theme.mixins.toolbar,

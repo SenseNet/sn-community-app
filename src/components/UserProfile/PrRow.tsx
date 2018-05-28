@@ -1,12 +1,12 @@
 import * as React from 'react'
-import * as FontAwesome from 'react-fontawesome'
+import FontAwesome from 'react-fontawesome'
 
 const styles = {
   pr: {
     marginTop: 20,
     textTransform: 'uppercase',
     fontSize: '18px'
-  },
+  } as React.CSSProperties,
   prNum: {
     fontWeight: 'bold',
     fontSize: '20px',
