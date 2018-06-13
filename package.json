@@ -50,7 +50,7 @@
     "commit": "git-cz"
   },
   "devDependencies": {
-    "@types/jest": "^22.1.0",
+    "@types/jest": "^23.1.0",
     "@types/node": "^9.3.0",
     "@types/react": "^16.0.25",
     "@types/react-dom": "^16.0.3",
