@@ -20,7 +20,7 @@
     "promise": "8.0.1",
     "react": "^16.6.3",
     "react-dev-utils": "^5.0.0",
-    "react-dom": "^16.1.1",
+    "react-dom": "^16.6.3",
     "react-fontawesome": "^1.6.1",
     "sn-client-auth-google": "^1.0.0",
     "source-map-loader": "^0.2.1",
