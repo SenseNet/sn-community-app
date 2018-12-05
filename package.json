@@ -63,7 +63,7 @@
     "moment": "^2.19.3",
     "normalizr": "^3.2.4",
     "radium": "^0.24.0",
-    "react-redux": "^5.0.6",
+    "react-redux": "^6.0.0",
     "react-router-dom": "^4.2.2",
     "request": "^2.83.0",
     "semver": "^5.4.1",
